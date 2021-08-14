@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="72dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="52dp"
+        android:text="X"
+        android:textColor="#E46008"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/made"
+        app:layout_constraintEnd_toStartOf="@+id/o"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:text="O"
+        android:textColor="#F80C20"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="X"
+        android:textColor="#E46008"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="216dp"
+        android:background="@drawable/border2"
+        app:layout_constraintBottom_toTopOf="@+id/made"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/logotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/bigshot_one"
+            android:text="TicTacToe"
+            android:textColor="#050F63"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/o2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="O"
+        android:textColor="#F80C20"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/made"
+        app:layout_constraintEnd_toStartOf="@+id/x"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginEnd="52dp"
+        android:text="X"
+        android:textColor="#E46008"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/o3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="O"
+        android:textColor="#F80C20"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toStartOf="@+id/x3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/x2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/made"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/o3"
+        android:layout_marginBottom="40dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/aldrich"
+        android:text="Developed By : Dharmendra Kumar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
